@@ -51,3 +51,18 @@ function moverCarrusel(idCarrusel, direccion) {
     dots[nuevoIndice].classList.add("active");
 }
 
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navLinks = document.getElementById("navLinks");
+
+hamburgerBtn.addEventListener("click", () => {
+    hamburgerBtn.classList.toggle("active");
+    navLinks.classList.toggle("active");
+});
+
+// Cierra el menú automáticamente al tocar un link
+navLinks.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburgerBtn.classList.remove("active");
+        navLinks.classList.remove("active");
+    });
+});

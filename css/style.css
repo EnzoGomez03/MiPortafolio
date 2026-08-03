@@ -603,3 +603,110 @@ html {
     font-size: 0.72rem;
     color: var(--ink-muted);
 }
+
+
+/*========Menú hamburguesa (oculto en desktop)============*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Cuando el menú está abierto, las 3 rayitas se transforman en una X */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/*========Responsive: pantallas angostas (celular)============*/
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(10, 13, 18, 0.97);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+    }
+
+    .nav-link {
+        padding: 18px 40px;
+        border-top: 1px solid var(--border);
+    }
+    .sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 40px 24px 60px;
+    }
+
+    .sobre-texto p {
+        max-width: 100%;
+    }
+
+    .sobre-texto h2::after {
+        margin: 12px auto 0;
+    }
+
+    .sobre-imagen {
+        margin-top: 0;
+        max-width: 260px;
+    }
+
+    .project-card {
+    flex-direction: column;
+    }
+
+    .browser-frame {
+        flex: none;
+        width: 100%;
+    }
+
+    .project-info {
+        padding: 24px;
+    }
+
+    .carousel-visit {
+        font-size: 0.65rem;
+        padding: 5px 10px;
+    }
+}
