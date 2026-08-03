@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+
+    <title> Enzo Gomez | Backend Developer </title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="navbar">
+            <a href="#" class="logo">Portafolio</a>
+            <nav class="nav-links">
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#stack" class="nav-link">Tecnologías</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+            </nav>
+
+        </header>
+
+        <section class="hero">
+            <div class="avatar">
+                <img src="img/perfil.jpg" alt="Enzo Gomez">
+            </div>
+
+            <h1 class="name">Enzo Gomez</h1>
+            <p class="role">Aspirante a Backend Developer</p>
+            <p class="substudy">Estudiante de Programacion en la UTN</p>
+            <p class="quote">Aprendiendo hoy para desarrollar las soluciones del mañana.</p>
+
+            <div class="divider"></div>
+            <p class="eyebrow">Bienvenido a mi portfolio</p>
+
+            <div class="cta-row">
+                <a href="https://github.com/EnzoGomez03" class="btn" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/enzo-gomez-0819322b7/" class="btn" target="_blank" rel="noopener">Linkedin</a>
+                <a href="assets/EnzoGomezCV_IT.pdf" download="EnzoGomezCV_IT" class="btn btn-solid">Descargar CV</a>
+            </div>
+
+            <a href="#proyectos" class="scroll">↓ Scroll para conocer más</a>
+        </section>
+
+        <section class="sobre-mi" id="sobre-mi">
+            <div class="sobre-texto">
+                <h2>🖥️Sobre mi</h2>
+                <p>
+                Soy estudiante de la Tecnicatura Universitaria en Programación Informática en la UTN. Me apasiona el desarrollo backend y el trabajo con bases de datos. Actualmente continúo ampliando mis conocimientos en Node.js a través de Talento Tech, complementando mi formación universitaria. Fuera de la programación, disfruto del deporte y los desafíos que requieren disciplina y constancia.
+                </p>
+            </div>
+
+            <div class="sobre-imagen">
+                    <img src="img/sobreMi2.png" alt="Enzo Gomez Animado">
+            </div>
+
+        </section>
+
+
+        <section class="stack" id="stack">
+            <div class="stack-header">
+                <span class="stack-icon">⚙️</span>
+                <h2>Stack Tecnológico</h2>
+            </div>
+
+            <div class="marquee">
+                <div class="marquee-track" id="techTrack"></div>
+            </div>
+
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <div class="stack-header">
+                <span class="stack-icon">💻</span>
+                <h2>Proyectos</h2>
+            </div>
+
+            <div class="proyectos-grid">
+
+                <article class="project-card">
+                    <div class="browser-frame">
+                        <div class="browser-bar">
+                            <span class="browser-dot red"></span>
+                            <span class="browser-dot yellow"></span>
+                            <span class="browser-dot green"></span>
+                        </div>
+
+                        <div class="carousel" id="fatuCarousel">
+                            <img src="img/proyecto-fatu-1.jpeg" alt="Catálogo de Fatu" class="active">
+                            <img src="img/proyecto-fatu-2.jpeg" alt="Formulario de pedido de Fatu">
+                        </div>
+
+                        <button class="carousel-btn prev" aria-label="Imagen anterior" onclick="moverCarrusel('fatuCarousel', -1)">‹</button>
+                        <button class="carousel-btn next" aria-label="Imagen siguiente" onclick="moverCarrusel('fatuCarousel', 1)">›</button>
+
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <a href="https://incredible-mochi-0bb7d8.netlify.app/" target="_blank" rel="noopener" class="carousel-visit">Ver sitio en vivo ↗</a>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-title-row">
+                            <h3>Fatu — Pedidos Online</h3>
+                            <span class="badge badge-live">Cliente real · En producción</span>
+                        </div>
+
+                        <p>Sistema de pedidos al por mayor para una fábrica de galletas, desarrollado para un cliente real y actualmente en uso.</p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- el próximo proyecto va acá, con el mismo formato que el de arriba -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
