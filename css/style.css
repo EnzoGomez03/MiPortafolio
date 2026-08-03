@@ -527,3 +527,79 @@ html {
     color: var(--accent);
     border: 1px solid rgba(61, 169, 219, 0.3);
 }
+
+
+/*========Sección de Contacto============*/
+.contacto {
+    padding: 100px 24px 40px;
+    text-align: center;
+}
+
+.contacto-content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin: 8px 0 16px;
+}
+
+.contacto-texto {
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.contacto-links {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto-link {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.contacto-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.25s ease;
+}
+
+.contacto-link:hover {
+    color: var(--ink);
+}
+
+.contacto-link:hover::after {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+}
