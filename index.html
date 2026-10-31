@@ -35,10 +35,10 @@
 
         <section class="hero">
             <div class="avatar">
-                <img src="img/perfil.jpg" alt="Enzo Gomez">
+                <picture><source srcset="img/perfil.webp" type="image/webp"><img src="img/perfil.jpg" alt="Enzo Gomez" width="256" height="384" decoding="async" fetchpriority="high"></picture>
             </div>
 
-            <h1 class="name">Enzo Gomez</h1>
+            <h1 class="name"><span class="name-part">Enzo</span> <span class="name-part">Gomez</span></h1>
             <p class="role">Aspirante a Backend Developer</p>
             <p class="substudy">Estudiante de Programacion en la UTN</p>
             <p class="quote">Aprendiendo hoy para desarrollar las soluciones del mañana.</p>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="sobre-imagen">
-                    <img src="img/sobreMi2.png" alt="Enzo Gomez Animado">
+                    <picture><source srcset="img/sobre-mi.webp" type="image/webp"><img src="img/sobreMi2.png" alt="Enzo Gomez Animado" width="840" height="560" decoding="async" loading="lazy"></picture>
             </div>
 
         </section>
@@ -76,6 +76,7 @@
                 <h2>Stack Tecnológico</h2>
             </div>
 
+            <div class="stack-controls"><button class="motion-toggle" id="techMotionToggle" type="button" aria-controls="techTrack" aria-pressed="false" hidden>Pausar animación</button></div>
             <div class="marquee">
                 <div class="marquee-track" id="techTrack"></div>
             </div>
@@ -99,9 +100,9 @@
                         </div>
 
                         <div class="carousel" id="fatuCarousel">
-                            <img src="img/fatu%20admin.png" alt="Panel de administración de Fatu" class="active">
-                            <img src="img/fatu%20inicio.png" alt="Página de inicio de Fatu">
-                            <img src="img/fatu.png" alt="Vista del sitio de Fatu">
+                            <picture><source srcset="img/fatu-admin.webp" type="image/webp"><img src="img/fatu%20admin.png" alt="Panel de administración de Fatu" class="active" width="1440" height="718" decoding="async" loading="lazy"></picture>
+                            <picture><source srcset="img/fatu-inicio.webp" type="image/webp"><img src="img/fatu%20inicio.png" alt="Página de inicio de Fatu" width="1440" height="711" decoding="async" loading="lazy"></picture>
+                            <picture><source srcset="img/fatu.webp" type="image/webp"><img src="img/fatu.png" alt="Vista del sitio de Fatu" width="1440" height="706" decoding="async" loading="lazy"></picture>
                         </div>
 
                         <button class="carousel-btn prev" aria-label="Imagen anterior" onclick="moverCarrusel('fatuCarousel', -1)">‹</button>
@@ -113,7 +114,6 @@
                             <span class="dot"></span>
                         </div>
 
-                        <a href="https://incredible-mochi-0bb7d8.netlify.app/" target="_blank" rel="noopener" class="carousel-visit">Ver sitio en vivo ↗</a>
                     </div>
 
                     <div class="project-info">
@@ -134,6 +134,7 @@
                             <span>JavaScript</span>
                             <span>Firebase Authentication</span>
                         </div>
+                        <a href="https://incredible-mochi-0bb7d8.netlify.app/" target="_blank" rel="noopener" class="btn btn-solid carousel-visit">Ver sitio en vivo ↗</a>
                     </div>
                 </article>
 
@@ -149,7 +150,7 @@
                 <h2>Hablemos</h2>
                 <p class="contacto-texto">Estoy abierto a oportunidades laborales, proyectos freelance y colaboraciones.</p>
 
-                <a href="mailto:enzolucha@gmail.com" class="btn btn-solid btn-contact">Contactarme →</a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=enzolucha%40gmail.com" target="_blank" rel="noopener" class="btn btn-solid btn-contact">Contactarme →</a>
 
                 <div class="contacto-links">
                     <a href="https://www.linkedin.com/in/enzo-gomez-0819322b7/" target="_blank" rel="noopener" class="contacto-link">LinkedIn</a>
